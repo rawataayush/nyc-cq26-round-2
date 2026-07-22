@@ -4,8 +4,12 @@ const Navbar = () => {
 
     const navLinks = [
         {
+            name: 'Home',
+            path: '/'
+        },
+        {
             name: "Compare",
-            path: '/',
+            path: 'compare',
         },
         {
             name: "Methodology",
