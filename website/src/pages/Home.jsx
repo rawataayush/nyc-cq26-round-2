@@ -1,8 +1,16 @@
+import Navbar from '../components/layout/Navbar';
+import Footer from '../components/layout/Footer';
+import Hero from '../components/sections/Hero';
+
 const Home = () => {
     return (
-        <div>
-            <h1>Home Page</h1>
-        </div>
+        <>
+            <Navbar />
+            <main>
+                <Hero />
+            </main>
+            <Footer />
+        </>
     )
 }
 

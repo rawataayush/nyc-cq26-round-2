@@ -1,11 +1,10 @@
-import axios from 'axios';
+import Home from "./pages/Home"
 
 const App = () => {
-  console.log(axios);
   
   return (
     <div>
-
+      <Home />
     </div>
   )
 }
