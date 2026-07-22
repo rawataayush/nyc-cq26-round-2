@@ -1,10 +1,16 @@
-const Button = () => {
+const Button = ({
+    children,
+    type="button",
+    onClick,
+    className = "",
+}) => {
     return (
         <button
-        type='button'
-        className='rounded-lg bg-blue-700 px-8 py-3 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:bg-blue-800 active:scale-95'
+        type={type}
+        onClick={onClick}
+        className={`rounded-xl bg-blue-700 px-6 py-3 text-sm font-medium text-white shadow-md transition duration-300 hover:bg-blue-800 active:scale-95 ${className}`}
         >
-            Compare Colleges
+            {children}
         </button>
     )
 }
