@@ -7,6 +7,10 @@ import { useState } from 'react';
 
 const Compare = () => {
     const [selectedColleges, setSelectedColleges] = useState([]);
+    const handleSelectCollege = (id) => {
+        setSelectedColleges((prev) => prev.includes(id) ? prev.filter((collegeId) => collegeId !== id) : [...prev, id])
+    }
+
 
     return (
     <>
@@ -27,6 +31,8 @@ const Compare = () => {
                 <CollegeCard
                     key={college.id}
                     college={college}
+                    selected={selectedColleges.includes(college.id)}
+                    onSelect={handleSelectCollege}
                 />
             ))}
         </section>
