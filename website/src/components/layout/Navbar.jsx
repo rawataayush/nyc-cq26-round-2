@@ -1,41 +1,25 @@
-import SearchBar from "../ui/SearchBar";
-
 const Navbar = () => {
     return (
-        <section className="relative overflow-hidden bg-white pt-16 pb-16 px-4 md:px-10">
-            <div className="absolute top-0 right-0 h-150 w-150 translate-x-1/4 -translate-y-1/2 rounded-full bg-blue-100/40"></div>
+        <div className='sticky top-0 z-50 border-b border-slate-200 bg-white backdrop:blur-md'>
+            <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 md:px-8 lg:px-12">
+                <a 
+                    href="#"
+                    className='flex items-center gap-2'
+                >
+                    <i className="ri-graduation-cap-fill text-3xl text-blue-700"></i>
 
-            <div className="relative z-10 mx-auto max-w-4xl text-center">
-
-                {/* Badge */}
-                <span className="mb-6 inline-block rounded-full bg-slate-200 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-slate-700">
-                    For JEE / JoSAA Counselling 2026
-                </span>
-
-
-                {/* Heading */}
-                <h1 className="mb-6 text-4xl font-extrabold leading-tight text-slate-900 md:text-6xl">Pick the right college,
-                    <br className="hidden md:block" />
-                    <span>
-                        {" "}your priorities, your score.
+                    <span className='text-2xl font-black tracking-tight text-slate-900'>
+                        CCS
                     </span>
-                </h1>
+                </a>
 
-                {/* Description */}
-                <p className="mx-auto mb-10 max-w-2xl text-lg leading-8 text-slate-600">
-                    CCS is not a ranking, It's a personalized comparison tool. Tell us what matters most across 11 parameters, and we compute a College
-                    Composite Score from verified student surveys-live, transparent, and
-                    free.
-                </p>
-
-                <div className="mx-auto mb-8 max-w-2xl">
-                    <SearchBar />
-                    <div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
+                <nav className='hidden items-center gap-8 md:flex'>
+                    <a href="#" className='border-b-2 border-blue-700 pb-1 font-semibold text-blue-700'>Compare</a>
+                    <a href="#" className='font-medium text-slate-600 transition hover:text-blue-700'>Methodology</a>
+                    <a href="#" className='font-medium text-slate-600 transition hover:text-blue-700'>About</a>
+                </nav>
+            </div>  
+        </div>
     )
 }
 
