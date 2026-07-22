@@ -11,7 +11,7 @@ const SearchBar = () => {
             />
 
             <div className="absolute right-2 top-2 bottom-2">
-                <Button>Search</Button>
+                <Button />
             </div>
         </div>
     )
