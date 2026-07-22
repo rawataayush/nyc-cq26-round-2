@@ -1,6 +1,8 @@
 import WeightSlidebar from '../components/compare/WeightSlidebar';
 import SearchFilter from '../components/compare/SearchFilter'
-
+import CollegeCard from '../components/compare/CollegeCard'
+import FloatingCompareBar from '../components/compare/FloatingCompareBar'
+import { colleges } from '../data/colleges.js';
 
 const Compare = () => {
     return (
@@ -18,8 +20,15 @@ const Compare = () => {
                     CCS Verified Data
                 </span>
             </div>
+            {colleges.map((college) => (
+                <CollegeCard
+                    key={college.id}
+                    college={college}
+                />
+            ))}
         </section>
         </main>
+        <FloatingCompareBar />
     </>
     )
 }
