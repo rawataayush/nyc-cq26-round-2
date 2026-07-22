@@ -9,7 +9,7 @@ const WeightSidebar = () => {
     academics: 15,
     cultureEvents: 5,
     location: 5,
-    facultyAlumniNetwork: 10,
+    facultyAluminiNetwork: 10,
     safety: 10,
   });
 
@@ -28,7 +28,7 @@ const WeightSidebar = () => {
       academics: 15,
       cultureEvents: 5,
       location: 5,
-      facultyAlumniNetwork: 10,
+      facultyAluminiNetwork: 10,
       safety: 10,
     });    
   }
