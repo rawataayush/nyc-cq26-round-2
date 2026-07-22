@@ -10,7 +10,7 @@ const SearchBar = () => {
                 className="w-full rounded-xl border-slate-300 bg-white py-5 pl-14 pr-10 shadow-sm outline-none transition-all duration-200 focus:border-blue-700 focus:ring-2 focus:ring-blue-700/20 group-hover:shadow-md"
             />
 
-            <div className="absolute right-2 top-2 bottom-2"> 
+            <div className="absolute right-2 top-2 bottom-2">
                 <Button>Search</Button>
             </div>
         </div>
