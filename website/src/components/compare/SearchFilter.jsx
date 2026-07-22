@@ -1,8 +1,4 @@
-import { useState } from 'react';
-
-const SearchFilter = () => {
-  const [search, setSearch] = useState("");
-
+const SearchFilter = ({ search, onSearchChange }) => {
   return (
     <div className='flex items-center rounded-xl border border-slate-200 bg-white p-2 shadow'>
       <i className="ri-search-line ml-3 mr-3 text-xl text-slate-400"></i>
@@ -11,7 +7,7 @@ const SearchFilter = () => {
         type="text" 
         placeholder="Search colleges...."
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(event) => onSearchChange(event.target.value)}
         className='flex-1 bg-transparent outline-none placeholder:text-slate-400'
       />
       
