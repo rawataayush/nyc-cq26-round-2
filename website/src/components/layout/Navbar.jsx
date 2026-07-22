@@ -30,7 +30,7 @@ const Navbar = () => {
                     <i className="ri-graduation-cap-fill text-3xl text-blue-700"></i>
 
                     <span className='text-2xl font-black tracking-tight text-slate-900'>
-                        CCS
+                        CollegeIndex
                     </span>
                 </Link>
 

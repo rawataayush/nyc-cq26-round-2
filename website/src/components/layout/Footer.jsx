@@ -5,7 +5,7 @@ const Footer = () => {
                 <div className='flex flex-col items-center gap-4 md:items-start'>
                     <div className='flex items-center gap-2 text-2xl font-bold text-slate-500'>
                         <i className="ri-graduation-cap-fill text-3xl"></i>
-                        <span>CCS</span>
+                        <span>CollegeIndex</span>
                     </div>
 
                     
